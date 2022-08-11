@@ -28,6 +28,9 @@ Route::get('/login', [LoginController::class, 'login'])->middleware('guest')->na
 Route::post('/login', [LoginController::class, 'authenticate'])->middleware('guest');
 Route::get('/account', [AccountController::class, 'show'])->middleware('auth')->name('account');
 Route::post('/store', [MedicationsController::class, 'store'])->middleware('auth');
-
+Route::get('/edit/{id}', [MedicationsController::class, 'edit'])->middleware('auth');
+Route::post('/update/{id}', [MedicationsController::class, 'update'])->middleware('auth');
+Route::get('/delete/{id}', [MedicationsController::class, 'delete'])->middleware('auth');
+Route::post('/remove/{id}', [MedicationsController::class, 'remove'])->middleware('auth');
 
  
