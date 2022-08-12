@@ -26,6 +26,8 @@ Route::get('/register', [RegisterController::class, 'create'])->middleware('gues
 Route::post('/register', [RegisterController::class, 'store'])->middleware('guest');
 Route::get('/login', [LoginController::class, 'login'])->middleware('guest')->name('login');
 Route::post('/login', [LoginController::class, 'authenticate'])->middleware('guest');
+Route::any('/logout', [LoginController::class, 'logout'])->middleware('auth')->name('logout');
+
 Route::get('/account', [AccountController::class, 'show'])->middleware('auth')->name('account');
 Route::post('/store', [MedicationsController::class, 'store'])->middleware('auth');
 Route::get('/edit/{id}', [MedicationsController::class, 'edit'])->middleware('auth');

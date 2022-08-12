@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:8000/account -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+        <!-- Fonts -->
+        <link href="./Laravel_files/css2" rel="stylesheet">
+        <!-- CSS only -->
+            <link href="./Laravel_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="./Laravel_files/bootstrap.bundle.min.js.download" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./Laravel_files/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="antialiased" cz-shortcut-listen="true">
+        <div class="container">
+            <h1>Account page</h1>
+                                    <form action="http://localhost:8000/store" method="POST">
+                <input type="hidden" name="_token" value="srqfH2lnsK9xYifBBNQnW5pB3Pld8fX4hexfvBSG">                <label for="mname">Medication name:</label>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Medication name" id="mname" name="mname" required="" maxlength="80">
+                </div>
+
+                <label for="dosage">Dosage amount:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="dosage" id="dosage" name="dosage" required="" maxlength="4" size="4">
+                </div>
+                <label for="freq">Frequency :</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Frequency" id="freq" name="freq" required="" maxlength="4" size="4"> 
+                </div>
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </form>
+            <hr>
+            <h5> Current Medications </h5>
+            <div class="container">
+                                    <div class="row">
+                        <div class="col-md">
+                            Medication:<b style="color:rgb(216, 139, 30)"> HypKickAssMeds </b> 
+                        </div>             
+                        <div class="col-md">
+                            Dosage:<b style="color:green"> 5 </b>                   
+                        </div>
+                        <div class="col-md">
+                            Frequency: <b style="color:rgb(129, 11, 179)">3 </b>                    
+                        </div>
+                        <div class="col-md">
+                            <a href="http://localhost:8000/account"><img src="./Laravel_files/pencil.png" style="margin-left:1rem" width="10" height="10"> </a>
+                            <a href="http://localhost:8000/account#"><img src="./Laravel_files/trash.png" width="10" height="10" style="margin-left:1rem"> </a>
+                        </div>
+                    </div>
+                                    <div class="row">
+                        <div class="col-md">
+                            Medication:<b style="color:rgb(216, 139, 30)"> Opeoid </b> 
+                        </div>             
+                        <div class="col-md">
+                            Dosage:<b style="color:green"> 4 </b>                   
+                        </div>
+                        <div class="col-md">
+                            Frequency: <b style="color:rgb(129, 11, 179)">3 </b>                    
+                        </div>
+                        <div class="col-md">
+                            <a href="http://localhost:8000/account"><img src="./Laravel_files/pencil.png" style="margin-left:1rem" width="10" height="10"> </a>
+                            <a href="http://localhost:8000/account#"><img src="./Laravel_files/trash.png" width="10" height="10" style="margin-left:1rem"> </a>
+                        </div>
+                    </div>
+                                    <div class="row">
+                        <div class="col-md">
+                            Medication:<b style="color:rgb(216, 139, 30)"> DuperDope2 </b> 
+                        </div>             
+                        <div class="col-md">
+                            Dosage:<b style="color:green"> 2 </b>                   
+                        </div>
+                        <div class="col-md">
+                            Frequency: <b style="color:rgb(129, 11, 179)">2 </b>                    
+                        </div>
+                        <div class="col-md">
+                            <a href="http://localhost:8000/account"><img src="./Laravel_files/pencil.png" style="margin-left:1rem" width="10" height="10"> </a>
+                            <a href="http://localhost:8000/account#"><img src="./Laravel_files/trash.png" width="10" height="10" style="margin-left:1rem"> </a>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    
+</body></html>
